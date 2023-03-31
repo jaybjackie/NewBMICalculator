@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E9C3C3E329D53BBB00A402FA /* NewBMICalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3C3E229D53BBB00A402FA /* NewBMICalculatorApp.swift */; };
-		E9C3C3E529D53BBB00A402FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3C3E429D53BBB00A402FA /* ContentView.swift */; };
+		E9C3C3E529D53BBB00A402FA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3C3E429D53BBB00A402FA /* MainView.swift */; };
 		E9C3C3E729D53BBD00A402FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3C3E629D53BBD00A402FA /* Assets.xcassets */; };
 		E9C3C3EA29D53BBD00A402FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3C3E929D53BBD00A402FA /* Preview Assets.xcassets */; };
+		E9C3C3F129D53E9400A402FA /* MyDeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3C3F029D53E9400A402FA /* MyDeveloperView.swift */; };
+		E9C3C3F329D53EAC00A402FA /* MyBMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3C3F229D53EAC00A402FA /* MyBMICalculatorView.swift */; };
+		E9EC035F29D6DE7700B99992 /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EC035E29D6DE7700B99992 /* MyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E914028C29D69754004918D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E9C3C3DF29D53BBB00A402FA /* NewBMICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBMICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C3C3E229D53BBB00A402FA /* NewBMICalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBMICalculatorApp.swift; sourceTree = "<group>"; };
-		E9C3C3E429D53BBB00A402FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9C3C3E429D53BBB00A402FA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E9C3C3E629D53BBD00A402FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9C3C3E929D53BBD00A402FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9C3C3F029D53E9400A402FA /* MyDeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDeveloperView.swift; sourceTree = "<group>"; };
+		E9C3C3F229D53EAC00A402FA /* MyBMICalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBMICalculatorView.swift; sourceTree = "<group>"; };
+		E9EC035E29D6DE7700B99992 /* MyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		E9C3C3E129D53BBB00A402FA /* NewBMICalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E914028C29D69754004918D4 /* Info.plist */,
 				E9C3C3E229D53BBB00A402FA /* NewBMICalculatorApp.swift */,
-				E9C3C3E429D53BBB00A402FA /* ContentView.swift */,
+				E9C3C3E429D53BBB00A402FA /* MainView.swift */,
+				E9C3C3F029D53E9400A402FA /* MyDeveloperView.swift */,
+				E9EC035E29D6DE7700B99992 /* MyImageView.swift */,
+				E9C3C3F229D53EAC00A402FA /* MyBMICalculatorView.swift */,
 				E9C3C3E629D53BBD00A402FA /* Assets.xcassets */,
 				E9C3C3E829D53BBD00A402FA /* Preview Content */,
 			);
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C3C3E529D53BBB00A402FA /* ContentView.swift in Sources */,
+				E9EC035F29D6DE7700B99992 /* MyImageView.swift in Sources */,
+				E9C3C3E529D53BBB00A402FA /* MainView.swift in Sources */,
+				E9C3C3F129D53E9400A402FA /* MyDeveloperView.swift in Sources */,
 				E9C3C3E329D53BBB00A402FA /* NewBMICalculatorApp.swift in Sources */,
+				E9C3C3F329D53EAC00A402FA /* MyBMICalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +283,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NewBMICalculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = NewBMICalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NewBMICalculator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = NewBMICalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
